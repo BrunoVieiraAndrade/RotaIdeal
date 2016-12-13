@@ -10,110 +10,126 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="brunoandrade.com.br.rotaideal.telas.MainActivity">
 
-    <ScrollView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <RelativeLayout
+            android:id="@+id/um"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal">
+            android:layout_centerHorizontal="true">
 
-            <RelativeLayout
-                android:id="@+id/um"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true">
-
-                <EditText
-                    android:id="@+id/valorRealMercadoria1"
-                    android:layout_width="250dp"
-                    android:inputType="numberDecimal"
-                    android:layout_height="wrap_content" />
-
-                <Spinner
-                    android:id="@+id/listaRegioes1"
-                    android:layout_width="250dp"
-                    android:layout_height="40dp"
-                    android:layout_below="@+id/valorRealMercadoria1">
-
-                </Spinner>
-
-                <EditText
-                    android:id="@+id/custoTransporte1"
-                    android:layout_width="250dp"
-                    android:inputType="numberDecimal"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/listaRegioes1"/>
-
-
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/dois"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/um"
-                android:layout_centerHorizontal="true">
-
-                <EditText
-                    android:id="@+id/valorRealMercadoria2"
-                    android:layout_width="250dp"
-                    android:inputType="numberDecimal"
-                    android:layout_height="wrap_content" />
-
-                <Spinner
-                    android:id="@+id/listaRegioes2"
-                    android:layout_width="250dp"
-                    android:layout_height="40dp"
-                    android:layout_below="@+id/valorRealMercadoria2">
-
-                </Spinner>
-
-                <EditText
-                    android:id="@+id/custoTransporte2"
-                    android:layout_width="250dp"
-                    android:inputType="numberDecimal"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/listaRegioes2"/>
-
-
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/tres"
+            <TextView
+                android:id="@+id/title1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@+id/dois">
+                android:text="Opção 1"/>
 
-                <EditText
-                    android:id="@+id/valorRealMercadoria3"
-                    android:layout_width="250dp"
-                    android:inputType="numberDecimal"
-                    android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/valorRealMercadoria1"
+                android:layout_width="250dp"
+                android:layout_below="@+id/title1"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
 
-                <Spinner
-                    android:id="@+id/listaRegioes3"
-                    android:layout_width="250dp"
-                    android:layout_height="40dp"
-                    android:layout_below="@+id/valorRealMercadoria3">
+            <Spinner
+                android:id="@+id/listaRegioes1"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/valorRealMercadoria1">
 
-                </Spinner>
+            </Spinner>
 
-                <EditText
-                    android:id="@+id/custoTransporte3"
-                    android:layout_width="250dp"
-                    android:inputType="numberDecimal"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/listaRegioes3"/>
+            <EditText
+                android:id="@+id/custoTransporte1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listaRegioes1"
+                android:inputType="numberDecimal" />
 
 
-
-            </RelativeLayout>
         </RelativeLayout>
-    </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/dois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/um"
+            android:layout_marginTop="4dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Opção 2"/>
+
+            <EditText
+                android:id="@+id/valorRealMercadoria2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title2"
+                android:inputType="numberDecimal" />
+
+            <Spinner
+                android:id="@+id/listaRegioes2"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/valorRealMercadoria2">
+
+            </Spinner>
+
+            <EditText
+                android:id="@+id/custoTransporte2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listaRegioes2"
+                android:inputType="numberDecimal" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dois"
+            android:layout_marginTop="4dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Opção 3"/>
+
+            <EditText
+                android:id="@+id/valorRealMercadoria3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title3"
+                android:inputType="numberDecimal" />
+
+            <Spinner
+                android:id="@+id/listaRegioes3"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/valorRealMercadoria3">
+
+            </Spinner>
+
+            <EditText
+                android:id="@+id/custoTransporte3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listaRegioes3"
+                android:inputType="numberDecimal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
 
 </RelativeLayout>
