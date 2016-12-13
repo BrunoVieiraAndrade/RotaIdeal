@@ -1,4 +1,4 @@
-package brunoandrade.com.br.rotaideal.telas.servico;
+package brunoandrade.com.br.rotaideal.servico;
 
 /**
  * Created by JeanCarlos and Bruno Vieira on 12/12/2016.
